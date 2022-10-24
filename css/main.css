@@ -1,0 +1,61 @@
+*,*::before, *::after {box-sizing: border-box;}
+
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background-color: #1e1f23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Animation */
+
+img{
+    display: block;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+    width: 41%;
+    padding-bottom: 4rem;
+    
+}
+/* Type- Range */
+.box{
+
+    border-radius: 40px;
+    margin-left: 230px;
+    margin-right: 220px;
+    padding:18px;
+    padding-bottom: 21px;
+    -webkit-border-radius: 52px;
+    border-radius: 52px;
+    background: #1e1f23; 
+    -webkit-box-shadow: 24px 24px 24px #151518, -24px -24px 24px #27292e;
+    box-shadow: 24px 24px 24px #151518, -24px -24px 24px #27292e;
+}
+.range
+{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 3px;
+    background:#D4AF37;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.range::-webkit-slider-thumb:hover{
+    box-shadow: 0 0 0 10px rgba(255, 255, 255,.1);
+}
+.range:active::-webkit-slider-thumb{
+
+    box-shadow: 0 0 0 10px rgba(255, 255, 255,.3);
+}
